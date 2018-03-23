@@ -2,22 +2,29 @@ package model;
 
 public class DemanderFormation {
 
-	private String theme;
+	private String dateFin;
 	private String etatValidation;
 	private String dateDemande;
+	private String dateDebut;
 
-	public DemanderFormation(String theme, String etatValidation, String dateDemande) {
-		this.theme = theme;
-		this.etatValidation = etatValidation;
+	// Constante
+	// public final static String ETATINITIAL = "Initial";
+
+	public DemanderFormation(String dateFin, String dateDemande, String dateDebut) {
+
+		this.dateFin = dateFin;
 		this.dateDemande = dateDemande;
+		this.dateDebut = dateDebut;
+		this.etatValidation = "Initial";
+
 	}
 
-	public String getTheme() {
-		return theme;
+	public String getDateFin() {
+		return dateFin;
 	}
 
-	public void setTheme(String theme) {
-		this.theme = theme;
+	public void setDateFin(String dateFin) {
+		this.dateFin = dateFin;
 	}
 
 	public String getEtatValidation() {
@@ -34,6 +41,14 @@ public class DemanderFormation {
 
 	public void setDateDemande(String dateDemande) {
 		this.dateDemande = dateDemande;
+	}
+
+	public String getDateDebut() {
+		return dateDebut;
+	}
+
+	public void setDateDebut(String dateDebut) {
+		this.dateDebut = dateDebut;
 	}
 
 }
