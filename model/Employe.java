@@ -37,6 +37,6 @@ public class Employe {
 	}
 
 	public void demanderFormation(String theme) {
-		
+		System.out.println("lemploye " + prenom + nom + "demande une formation sur" + theme);
 	}
 }

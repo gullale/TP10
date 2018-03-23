@@ -36,6 +36,13 @@ public class Manager {
 		this.id = id;
 	}
 
-	public void validerFormation() {
+	@Override
+	public String toString() {
+		return "Manager [nom=" + nom + ", prenom=" + prenom + ", id=" + id + "]";
 	}
+
+	public void validerFormation() {
+		System.out.println("c'est ok");
+	}
+	
 }
